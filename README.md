@@ -5,11 +5,11 @@ um is unitymacro
  
  //usage
   async Task Start(){
-    //var data =new Dictonary<string,object> dic;
+    //var data =new Dictonary<string,object>();
     var gd = gameobject.root.GetObject("GAMEDATA").GetComponent<GameData>();
     var data =gd.vals;
     var um = new UM();
-    await um.Run(script,ref dic);
+    await um.Run(script,ref data);
     Debug.Log("end");
   }
  
